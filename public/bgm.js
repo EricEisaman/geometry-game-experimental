@@ -9,7 +9,8 @@
   bgm.autoplay = 'autoplay';
   bgm.loop = true;
   bgm.volume = 0.00;
-  document.body.appendChild(bgm);
+  bgm.setAttribute('controls','');
+  document.querySelector('#bgm').appendChild(bgm);
 
  
   var nextSongBtn = document.createElement('button');
