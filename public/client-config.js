@@ -52,7 +52,7 @@ window.config = {
   grid:"",
   gridColor:"",
   lighting:"",
-  lightPosition:""
+  lightPosition:"100 100 -110"
  },
  //Soundcloud track numbers from share/embed code
  songs:[265693310,120585130,156420873,180582345,1801713],
