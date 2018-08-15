@@ -56,7 +56,7 @@ window.config = {
  },
  //Soundcloud track numbers from share/embed code
  songs:[265693310,120585130,156420873,180582345,1801713],
- releasePointerLockOnUI: false,
+ releasePointerLockOnUI: true,
  //SEE REF. http://keycode.info/
  keys:{
   toggleUI:'Equal',
