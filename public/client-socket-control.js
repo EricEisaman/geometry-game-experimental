@@ -116,8 +116,8 @@ window.socket.on('login-results',data=>{
   if(data.success){
     if(typeof window.startGame == 'undefined'){
       let i = setInterval(()=>{
-        console.log('checking if window.startGame is defined');
-        if(!(typeof window.startGame == 'undefined')){
+        console.log('checking if AFRAME scene has loaded.');
+        if(window.AFRAME.scenes[0].hasLoaded){
           window.startGame();
           clearInterval(i);
         }

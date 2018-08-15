@@ -19,6 +19,7 @@ window.setCustomPhysics = ()=>{
     switch(o.model){
       case "heart":
         e.setAttribute('geometry','primative:box;');
+        e.setAttribute('shadow','cast: false');
         e.setAttribute('material','opacity:0');
         let m = document.createElement('a-entity');
         m.id = 'm'+Math.random().toFixed(4).toString().replace('.','');
@@ -27,6 +28,7 @@ window.setCustomPhysics = ()=>{
         l.setAttribute('type','spot');
         l.setAttribute('angle','20');
         l.setAttribute('color','#fff');
+        l.setAttribute('intensity','2');
         l.setAttribute('position','0 2 0');
         l.setAttribute('target',`#${m.id}`);
         m.appendChild(l);
