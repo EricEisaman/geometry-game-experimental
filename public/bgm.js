@@ -52,6 +52,15 @@ document.body.addEventListener('keyup',e=>{
    }
 });
 
+let i = setInterval(()=>{
+ if(window.gameHasBegun){
+   console.log('playing background music');
+   bgm.volume = 0.05;
+   bgm.play();
+   clearInterval(i);
+ }
+},3000);
+
 
 
 
