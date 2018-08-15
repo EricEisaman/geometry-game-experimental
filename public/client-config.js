@@ -52,7 +52,7 @@ window.config = {
   grid:"",
   gridColor:"",
   lighting:"",
-  lightPosition:"100 100 -110"
+  lightPosition:""
  },
  //Soundcloud track numbers from share/embed code
  songs:[265693310,120585130,156420873,180582345,1801713],
@@ -87,7 +87,8 @@ window.config = {
       {name:'Shiny Cube',geometry:"primitive:box;width:4;height:4;depth:4",position:'-28 8 -10',color:'#FFF',material:'shiny-crinkle'},
       {name:'Shiny Sphere',geometry:'primitive: sphere; radius: 2',position:'-20 4 -10',color:'#FFF',material:'shiny-crinkle'},
       {name:'Heart',model:'heart',position:'-28 4 -10',color:'#FFF'},
-      //{name:'Heart2',model:'heart-light',position:'0 8 -10',color:'#FFF'} 
+      {name:'Small Shiny Sphere',geometry:'primitive: sphere; radius: 1',position:'0 8 -10',color:'#FFF',material:'shiny-crinkle'}
+      //{name:'Heart2',model:'heart-light',position:'0 18 -10',color:'#FFF'} 
     ]
  },
  thruster:{
