@@ -17,7 +17,7 @@ window.setCustomPhysics = ()=>{
   window.config.physics.objects.forEach(o=>{
     let e = document.createElement('a-entity');
     switch(o.model){
-      case "heart":
+      case "heart-light":
         e.setAttribute('geometry','primative:box;');
         e.setAttribute('shadow','cast: false');
         e.setAttribute('material','opacity:0');
@@ -42,6 +42,24 @@ window.setCustomPhysics = ()=>{
         a.setAttribute('easing','linear');
         m.appendChild(a);
         e.appendChild(m);
+        break;
+      case "heart":
+        e.setAttribute('geometry','primative:box;');
+        e.setAttribute('shadow','cast: false');
+        e.setAttribute('material','opacity:0');
+        let p = document.createElement('a-entity');
+        p.id = 'm'+Math.random().toFixed(4).toString().replace('.','');
+        p.setAttribute('gltf-model',"url(https://cdn.glitch.com/dd72d0a0-2747-40ff-8463-f7755366f80f%2Fheart.glb?1534273139848)");
+        let q = document.createElement('a-animation');
+        q.setAttribute('attribute','rotation');
+        q.setAttribute('from','0 0 0');
+        q.setAttribute('to','0 360 0');
+        q.setAttribute('direction','forward');
+        q.setAttribute('dur','4000');
+        q.setAttribute('repeat','indefinite');
+        q.setAttribute('easing','linear');
+        p.appendChild(q);
+        e.appendChild(p);
         break;
       default:
         e.setAttribute('geometry', o.geometry);

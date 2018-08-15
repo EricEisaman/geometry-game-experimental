@@ -87,7 +87,7 @@ window.config = {
       {name:'Shiny Cube',geometry:"primitive:box;width:4;height:4;depth:4",position:'-28 8 -10',color:'#FFF',material:'shiny-crinkle'},
       {name:'Shiny Sphere',geometry:'primitive: sphere; radius: 2',position:'-20 4 -10',color:'#FFF',material:'shiny-crinkle'},
       {name:'Heart',model:'heart',position:'-28 4 -10',color:'#FFF'},
-      {name:'Heart2',model:'heart',position:'0 8 -10',color:'#FFF'} 
+      //{name:'Heart2',model:'heart-light',position:'0 8 -10',color:'#FFF'} 
     ]
  },
  thruster:{
