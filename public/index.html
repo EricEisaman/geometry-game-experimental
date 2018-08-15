@@ -99,20 +99,16 @@
       
     </a-scene>
     <div id="dialog-container" style="position:absolute; top:0px; left:0px; z-index:1000;width:600">
-      <dialog id="dialog_" style="width:600">
-        <input id="msg_" placeholder="Enter your message here." style="width:460">
-        <input id="key_" placeholder="key" style="width:200">
-        <button id="submit-message_">
-          Submit Message
-        </button>
-      </dialog>
       <dialog id="dialog">
         <h3 class="modal-header">Send a Message or Change your Avatar</h3>
         <div class="modal-body">
           <input id="msg" placeholder="Enter your message.">
         </div>
-        <footer id="btns" class="modal-footer">
-
+        <footer id="bgm-footer" class="modal-footer">
+          <div id="bgm"></div>
+        </footer>
+        <footer id="btns-footer" class="modal-footer">
+          <div id="btns"></div>
         </footer>
       </dialog>
     </div>

@@ -4,7 +4,7 @@ window.config = {
  emoji:"♡",
  // https://www141.lunapic.com/editor/  http://icoconvert.com/
  favicon:"https://cdn.glitch.com/162b879e-fd42-40d9-8519-671d783b8c70%2Ftri.ico",
- login:{
+ theme:{
   // https://fonts.google.com/ examples: Kirang Haerang, Megrim, Permanent Marker, Orbitron, Monoton
   fontFamily:"Monoton",
   fontColor:"#F3C600",
